@@ -1,0 +1,66 @@
+Polymorphism & Composition Homework - Quiz
+
+Polymorphism
+What does the word 'polymorphism' mean?
+
+Polymorphism means "many forms".
+
+
+
+What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+
+Polymorphism is a concept (in some languages) by which an instance of a class can exist as a type of many other class types.
+The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+For example, a superclass called Shops has a method called canSellThings(). Subclasses of Shops could be GroceryShop, ClothesShop, CoffeeShop
+ - they also have their own implementation of a canSellProduct (grocery sells food, clothes shop sells items of clothing, coffee shop sells coffee etc).
+
+What can we use to implement polymorphism in Java?
+
+Inheritance and Interface.
+
+Polymorphysm can be achieved by so-called method overriring. It is done by declaring a method in child class which is already present in 
+a parent class, but a child class can give its own implementation to a method. 
+In this case the method in parent class is called overridden method and the method in child class is called overriding method. 
+We can also implement polymorphysm by method overloading. Method overloading means there 
+are several methods present in a class having the same name, but different types/order/number of parameters. 
+
+
+How many 'forms' can an object take when using polymorphism?
+
+As many as there are classes
+
+
+Give an example of when you could use polymorphism.
+
+For example, we can have a parent class Shape with and two subclasses: Diamond and Circle. In parent class we can create a method render().
+The main purpose of the render() method would be to render the shape. However, the process of rendering a diamond would be different 
+than the process of rendering a circle. Hence, the render() method would behave differently in different shapes' classes. 
+Or, we can say render() is polymorphic.
+
+
+Composition
+What do we mean by 'composition' in reference to object-oriented programming?
+
+Composition is one of the ways to give a behaviour to a class which allows to model a has-a association between objects. 
+With composition we incorporate a class with the desired behavior rather than inherit it from a different class. 
+Composition is where we have an instance of a class within another class, instead of inheriting from it.
+
+When would you use composition? Provide a simple example in Java.
+
+A rule of thumb is to use HAS-A type relationships for composition. For instance,
+
+A house HAS-A: door, window, chimney, walls, roof.
+
+
+What is/are the advantage(s) of using composition?
+
+Composition is more flexible than inheritance. We can change implementation of a class by changing included object, 
+thus changing behavior of it, but it is impossible to do the same via inheritance, you can't change behavior of base class 
+without re-writing the code.
+A design based on object composition usually will have less classes.
+There is no conflict between methods/properties names, which might occur with inheritance.
+
+
+When an object is destroyed, what happens to all the objects it is composed of?
+
+The objects also get destroyed.
