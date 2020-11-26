@@ -11,14 +11,13 @@ What does it mean when we apply polymorphism to OO design? Give a simple Java ex
 
 Polymorphism is a concept (in some languages) by which an instance of a class can exist as a type of many other class types.
 The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
-For example, a superclass called Shops has a method called canSellThings(). Subclasses of Shops could be GroceryShop, ClothesShop, CoffeeShop
- - they also have their own implementation of a canSellProduct (grocery sells food, clothes shop sells items of clothing, coffee shop sells coffee etc).
+For example, a superclass called Shop has a method called canSellThings(). Subclasses of Shop class could be GroceryShop, ClothesShop, CoffeeShop
+- they also have their own implementation of a canSellProduct (grocery sells food, clothes shop sells items of clothing, 
+coffee shop sells coffee - unless we're in Amsterdam, etc).
 
 What can we use to implement polymorphism in Java?
 
-Inheritance and Interface.
-
-Polymorphysm can be achieved by so-called method overriring. It is done by declaring a method in child class which is already present in 
+By using Inheritance and Interface. Polymorphysm can be achieved by so-called method overriring. It is done by declaring a method in child class which is already present in 
 a parent class, but a child class can give its own implementation to a method. 
 In this case the method in parent class is called overridden method and the method in child class is called overriding method. 
 We can also implement polymorphysm by method overloading. Method overloading means there 
@@ -27,12 +26,12 @@ are several methods present in a class having the same name, but different types
 
 How many 'forms' can an object take when using polymorphism?
 
-As many as there are classes
+As many as there are classes??.. Not sure.
 
 
 Give an example of when you could use polymorphism.
 
-For example, we can have a parent class Shape with and two subclasses: Diamond and Circle. In parent class we can create a method render().
+For example, we can have a parent class Shape and two subclasses: Diamond and Circle. In parent's class we can create a method render().
 The main purpose of the render() method would be to render the shape. However, the process of rendering a diamond would be different 
 than the process of rendering a circle. Hence, the render() method would behave differently in different shapes' classes. 
 Or, we can say render() is polymorphic.
@@ -41,9 +40,9 @@ Or, we can say render() is polymorphic.
 Composition
 What do we mean by 'composition' in reference to object-oriented programming?
 
-Composition is one of the ways to give a behaviour to a class which allows to model a has-a association between objects. 
-With composition we incorporate a class with the desired behavior rather than inherit it from a different class. 
-Composition is where we have an instance of a class within another class, instead of inheriting from it.
+Composition allows to model a has-a(as opposed to is-a) association between objects and is one of the ways to give a behaviour to a class. 
+With composition we incorporate a class with the desired behavior rather than inherit it from a different class (as is done with inheritance). 
+So, composition is where we have an instance of a class within another class, instead of inheriting from it.
 
 When would you use composition? Provide a simple example in Java.
 
